@@ -19,15 +19,14 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from core.views import home, all_works, work_by_category, work_detail
+from core.views import home, all_works, work_by_category
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', home, name='home'),
     path('works/', all_works, name='all-works'),
-    path('works/<int:work>/', work_by_category, name='work-by-category'),
-    path('works/<int:category>/<int:work>/', work_detail, name='work-detail'),
+    path('works/<int:category_pk>/', work_by_category, name='work-by-category'),
 ]
 
 if settings.DEBUG:
