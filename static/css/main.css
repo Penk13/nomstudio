@@ -7,10 +7,20 @@
     width: 100%;
 }
 
+@font-face {
+    font-family: firstFont;
+    src: url('/static/etc/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: secondFont;
+    src: url('/static/etc/LibreBaskerville-Regular.ttf');
+  }
+
 .heading-style1 {
-    font-family: "league spartan";
+    font-family: firstFont;
 }
 
 .heading-style2 {
-    font-family: "Libre Baskerville";
+    font-family: secondFont;
 }
