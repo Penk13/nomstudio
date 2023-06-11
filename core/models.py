@@ -12,7 +12,7 @@ class WorkCategory(models.Model):
 class Work(models.Model):
     category = models.ForeignKey(WorkCategory, on_delete=models.CASCADE)
     title = models.CharField(max_length=255, blank=False)
-    description = models.TextField(blank=False)
+    description = models.TextField(blank=True)
     image = models.ImageField(upload_to ='work/')
     date_created = models.DateTimeField(auto_now_add=True)
 
