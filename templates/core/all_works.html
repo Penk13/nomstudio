@@ -4,14 +4,14 @@
 
 {% block content %}
 <div class="container text-light">
-    <h1 class="fw-bold text-center py-3 heading-style">CHECK THIS OUT !</h1>
+    <h1 class="fw-bold text-center py-3 heading-style2">CHECK THIS OUT !</h1>
     <div class="row">
         {% for work_category in work_categories %}
         <div class="col-sm-12 col-md-6 col-lg-4">
             <a class="text-decoration-none" href="{% url 'work-by-category' work_category.pk %}">
                 <div class="card my-3 d-flex justify-content-center">
                     <img src="{{ work_category.image.url }}" alt="">
-                    <h3 class="w-100 m-0 p-0 text-center text-light heading-style" style="position: absolute;">{{ work_category.title }}</h3>
+                    <h3 class="w-100 m-0 p-0 text-center text-light heading-style2" style="position: absolute;">{{ work_category.title }}</h3>
                 </div>
             </a>
         </div>
